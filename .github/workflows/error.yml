@@ -3,6 +3,7 @@ name: Error
 on: [push, workflow_dispatch]
 
 jobs:
+  runs-on: windows-latest
   error:
     concurrency:
       group: ${{ matrix.arguments }}
