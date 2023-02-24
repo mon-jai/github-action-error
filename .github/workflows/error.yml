@@ -1,0 +1,11 @@
+
+name: Error
+on: [push, workflow_dispatch]
+
+jobs:
+  error:
+    concurrency:
+      group: ${{ matrix.arguments }}
+    strategy:
+      matrix:
+        arguments: ["foo", "bar"]
