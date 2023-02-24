@@ -10,3 +10,6 @@ jobs:
     strategy:
       matrix:
         arguments: ["foo", "bar"]
+    steps:
+      - run: |
+          echo "Hello world"
