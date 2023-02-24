@@ -7,6 +7,7 @@ jobs:
     runs-on: windows-latest
     concurrency:
       group: ${{ matrix.arguments }}
+      cancel-in-progress: true
     strategy:
       matrix:
         arguments: ["foo", "bar"]
